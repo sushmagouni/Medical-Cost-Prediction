@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Medical Cost Prediction</title>
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <style>
+      body {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        background-image:url(../static/assets/img/details.jpg);
+        object-fit: contain;
+        background-size: 100% 800px;
+        background-repeat: no-repeat;
+    
+    }
+    #lg{
+        background: linear-gradient(to bottom right, rgba(233, 225, 225, 0.5), rgba(227, 221, 221, 0.5), rgba(238, 241, 243, 0.5));
+        width: 100%;
+        height: 750px;
+        margin: -20px 0;
+    }
+    #name {
+           font-size: 40px;
+           margin: 0 12%;
+           padding: 15px;
+           color: rgb(238, 18, 18);
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    #nav ul{
+           list-style-type: none;
+           display: flex;
+           justify-content: flex-end;
+           display: flex;
+           justify-content: flex-end;
+           color: rgb(238, 18, 18);
+           gap: 10px;
+           margin:-55px 100px;
+        }
+    #nav li a {
+        text-decoration: none;
+        font-size: 25px;
+        color: rgb(249, 47, 11);
+        padding: 10px;
+    }
+    #nav li a.active{
+         color: rgb(251, 11, 23);
+    }
+    @media screen and (min-width:0) and(max-width: 768px) {
+        #nav ul{
+           width: auto;
+           height: auto;
+           overflow: hidden;
+          position: relative;
+          margin-top:25px;
+          display: block;
+          color: rgb(174, 4, 4);
+    }
+    #nav li{
+        float:left;
+    }
+    #nav li a {
+    padding:10px;
+    }
+    }
+    #title{
+      font-size: 50px;
+      font-family: Verdana, Geneva,Tahoma, sans-serif;
+      font-style: oblique;
+      text-align: center;
+      margin-top: 200px;
+      color: rgb(235, 11, 11);
+    
+    }
+    #quo{
+       text-align: center;
+       margin-top: 20px;
+       font-size:25px;
+       font-style: italic;
+       color: rgb(0, 16, 6);
+    }
+    #predbut{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+    }
+    #box{
+         width: 250px;
+         height: 40px;
+         border: 2px solid rgb(22, 2, 109);
+         border-radius: 5px;
+         padding: 15px 5px 8px 12px;
+         backdrop-filter: blur(5px);
+    }
+    #box a{
+        text-decoration: none;
+        font-size: 25px;
+        color: rgb(9, 9, 8);
+    }
+    </style>
+   <div id="lg">
+    <header id="name">Medical Expenses</header>
+   <nav id="nav">
+    <ul>
+      <li><a href="#"class="active">HOME</a></li>
+       <li><a href="/details">PREDICTION</a></li>
+       <li><a href="/about">ABOUT</a></li>
+  </ul>
+  </nav>
+          <h1 id="title">MEDICAL COST PREDICTION</h1>
+          <p id="quo">"use our tool to predict your future medical expenses based on various factors"</p>
+          <li><a href="/about">ABOUT</a></li>
+ </div>
+</body>
+</html>

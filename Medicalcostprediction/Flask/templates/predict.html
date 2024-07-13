@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Expenses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image:url(../static/assets/img/img2.jpg);
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        nav {
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            text-align: center;
+        }
+        .prediction {
+            padding: 20px;
+            background-color: #e9ecef;
+            border-left: 5px solid #007bff;
+            text-align: center;
+        }
+        .prediction p {
+            margin: 0;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/home">Home</a>
+            <a href="/details">Details</a>
+            <a href="/predict">Prediction</a>
+        </nav>
+        <h1>Medical Expenses</h1>
+        <div class="prediction">
+            <p>Medical Expenses are :</p>
+            <h2 id="prediction-text">{{prediction}}</h2>
+        </div>
+    </div>
+</body>
+</html>
